@@ -1,0 +1,20 @@
+{@F1, @F2}
+	xte 'keydown Alt_L' 'key {Left,Right}' 'keyup Alt_L'
+
+@F3
+	xte 'keydown Control_L' 'key r' 'keyup Control_L'
+
+@F4
+	xte 'keydown Alt_L' 'key f' 'keyup Alt_L'
+
+@F5
+	xte 'keydown Alt_L' 'keydown Shift_L' 'key Right' 'keyup Shift_L' 'keyup Alt_L'
+
+{@F6, @F7}
+	xbacklight -{dec,inc} 10
+
+@F8
+	amixer set Master mute
+
+{@F9, @F10}
+	amixer sset Master 10%{-,+} unmute 

@@ -1,0 +1,1 @@
+/home/tylor/.zprezto/runcoms/zlogin
