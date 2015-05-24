@@ -3,13 +3,25 @@ imap <c-s> :w!<cr>
 map <leader>q :q<cr>
 map <leader>qq :q!<cr>
 
+au BufRead,BufNewFile *.kv set filetype=kivy
+au! Syntax kivy source $HOME/.vim/syntax/kivy.vim
+
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>g :!go get <cr>
 
 map <leader>f :NERDTreeFocusToggle <cr>
 map <leader>t :TagbarToggle <cr>
 
-let g:neocomplete#enable_at_startup = 1
+" make YCM compatible with UltiSnips (using supertab)
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 let g:jsx_ext_required = 0
 let g:go_fmt_command = "goimports"
 let g:nerdtree_tabs_open_on_console_startup = 1
