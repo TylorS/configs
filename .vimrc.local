@@ -9,8 +9,12 @@ au! Syntax kivy source $HOME/.vim/syntax/kivy.vim
 au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>g :!go get <cr>
 
+au FileType python nmap <leader>r :!python3 % <cr>
+
 map <leader>f :NERDTreeFocusToggle <cr>
 map <leader>t :TagbarToggle <cr>
+
+" color summerfruit256
 
 " make YCM compatible with UltiSnips (using supertab)
 let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']

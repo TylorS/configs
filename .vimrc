@@ -52,9 +52,12 @@ NeoBundle 'sherzberg/vim-bootstrap-updater'
 let g:vim_bootstrap_langs = "go,python,html,javascript"
 
 "" Custom bundles
+NeoBundle 'amoffat/snake'
+NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'mxw/vim-jsx'
 NeoBundle 'moll/vim-node'
-NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'Valloric/YouCompleteMe' 
+"NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'jistr/vim-nerdtree-tabs'
